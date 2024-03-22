@@ -35,3 +35,31 @@ void input() {
 	}
 }
 
+void selectionsort()
+{
+	int i, j, min_idx;
+
+	for (i = 0; i < n - 1; i++)
+	{
+		min_idx = i;
+		for (j = i + 1; j < n; j++)
+		{
+			if (Imron[j] < Imron[min_idx])
+				min_idx = j;
+		}
+		swap(Imron[min_idx], Imron[i]);
+	}
+}
+
+void diplay() {
+	cout << endl;
+	cout << "=================" << endl;
+	cout << "Elemen yang telah tersusun" << endl;
+	cout << "===================" << endl;
+	for (int j = 0; j < n; j++) {
+		cout << Imron[j] << endl;
+
+	}
+	cout << "jumlah pass = " << n - 1 << endl;
+	cout << endl;
+}
