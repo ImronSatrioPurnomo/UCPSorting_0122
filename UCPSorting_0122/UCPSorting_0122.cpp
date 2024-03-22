@@ -51,3 +51,15 @@ void selectionsort()
 	}
 }
 
+void diplay() {
+	cout << endl;
+	cout << "=================" << endl;
+	cout << "Elemen yang telah tersusun" << endl;
+	cout << "===================" << endl;
+	for (int j = 0; j < n; j++) {
+		cout << Imron[j] << endl;
+
+	}
+	cout << "jumlah pass = " << n - 1 << endl;
+	cout << endl;
+}
