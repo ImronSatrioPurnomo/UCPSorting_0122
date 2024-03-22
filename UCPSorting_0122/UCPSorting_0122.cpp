@@ -63,3 +63,12 @@ void diplay() {
 	cout << "jumlah pass = " << n - 1 << endl;
 	cout << endl;
 }
+
+int main() {
+	input();
+	selectionsort();
+	diplay();
+	system("pause");
+
+		return 0;
+}
