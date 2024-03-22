@@ -8,6 +8,7 @@
 //3. yang harus di pilih adalah algoritma insertion sort dikarenakan algoritma insertion lebih optimal dan efisien jika di gunakan pada data
    //yang sudah tersortir terlebih dahulu. Dan bila data yang sudah di sortir adalah data yang lebih kecil, maka penggunaan algoritma insertion akan lebih efesien dan berguna
 
+//4. Konversi algoritma.
 #include <iostream>
 using namespace std;
 
@@ -16,21 +17,21 @@ int n;
 
 void input() {
 	while (true) {
-		cout << "Mauskan banyaknya element: ";
+		cout << "Masukan banyaknya elemen pada array: ";
 		cin >> n;
 		if (n <= 22)
 			break;
 		else {
-			cout << "\nTidak dapat memeiliki lebih dari 22 elemen. \n";
+			cout << "\nArray dapat mempunyai makasimal 22 elemen.\n";
 		}
 	}
 	cout << endl;
-	cout << "======================" << endl;
-	cout << "Masukan elemen" << endl;
-	cout << "========================" << endl;
+	cout << "=======================" << endl;
+	cout << "Masukan Elemen Array" << endl;
+	cout << "=====================" << endl;
 
 	for (int i = 0; i < n; i++) {
-		cout << "data ke-" << (i + i) << ": ";
+		cout << "Data Ke-" << (i + i) << ": ";
 		cin >> Imron[i];
 	}
 }
@@ -51,11 +52,11 @@ void selectionsort()
 	}
 }
 
-void diplay() {
+void display() {
 	cout << endl;
-	cout << "=================" << endl;
-	cout << "Elemen yang telah tersusun" << endl;
-	cout << "===================" << endl;
+	cout << "=============================================" << endl;
+	cout << "Element Array yang telah tersusun" << endl;
+	cout << "=======================================" << endl;
 	for (int j = 0; j < n; j++) {
 		cout << Imron[j] << endl;
 
@@ -67,8 +68,8 @@ void diplay() {
 int main() {
 	input();
 	selectionsort();
-	diplay();
+	display();
 	system("pause");
 
-		return 0;
+	return 0;
 }
